@@ -1,0 +1,23 @@
+<template>
+  <require from="./blur-image"></require>
+
+  <section>
+    <h2 class="ui header">${heading}</h2>
+    <div class="ui cards">
+      <div repeat.for="recipe of recipes" class="ui card">
+        <div class="content">
+          <img class="ui avatar image" src.bind="recipe.smallImageUrl" crossorigin ref="image"> ${recipe.title}
+        </div>
+        <div class="image">
+          <canvas width="290" height="74" blur-image.bind="image"></canvas>
+        </div>
+        <div class="extra content">
+          <a href="http://elee.menu/#/recipe/${recipe._id}">
+            <i class="user icon"></i>
+            Follow recipe
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>

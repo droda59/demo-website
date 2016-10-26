@@ -1,7 +1,7 @@
 node_modules
 .DS_STORE
 npm-debug.log*
-yarn-error.log
+/dist
 /build
 /typings
 /.awcache
