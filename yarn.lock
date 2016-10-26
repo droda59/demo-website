@@ -358,7 +358,7 @@ atob@~1.1.0:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/atob/-/atob-1.1.3.tgz#95f13629b12c3a51a5d215abdce2aa9f32f80773"
 
-aurelia-binding@^1.0.0, aurelia-binding@^1.0.7:
+aurelia-binding@^1.0.0, aurelia-binding@^1.0.4, aurelia-binding@^1.0.7:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/aurelia-binding/-/aurelia-binding-1.0.9.tgz#b4d14507dda00aef7dbc56fbcd527c5f9ebd137c"
   dependencies:
@@ -527,7 +527,7 @@ aurelia-templating-router@^1.0.0:
     aurelia-router "^1.0.1"
     aurelia-templating "^1.0.0"
 
-aurelia-templating@^1.0.0:
+aurelia-templating@^1.0.0, aurelia-templating@^1.1.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/aurelia-templating/-/aurelia-templating-1.1.2.tgz#a24c5dd94962cff35409058f2716bb4769495a19"
   dependencies:
@@ -546,6 +546,17 @@ aurelia-tools@^0.2.4:
   dependencies:
     breeze-dag "^0.1.0"
     through2 "^2.0.0"
+
+aurelia-validation@^0.13.1:
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/aurelia-validation/-/aurelia-validation-0.13.1.tgz#d9940204786dfaaaaa4040a8372e937cedc0e254"
+  dependencies:
+    aurelia-binding "^1.0.4"
+    aurelia-dependency-injection "^1.0.0"
+    aurelia-logging "^1.0.0"
+    aurelia-pal "^1.0.0"
+    aurelia-task-queue "^1.0.0"
+    aurelia-templating "^1.1.0"
 
 aurelia-webpack-plugin@^1.1.0:
   version "1.1.0"
@@ -3465,6 +3476,10 @@ ini@^1.3.4, ini@~1.3.0:
   version "1.3.4"
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.4.tgz#0537cb79daf59b59a1a517dff706c86ec039162e"
 
+inline-worker@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/inline-worker/-/inline-worker-0.1.0.tgz#b290c336eb54a721ed3d22f72a2b9aacdf680e84"
+
 inquirer@~0.10:
   version "0.10.1"
   resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-0.10.1.tgz#ea25e4ce69ca145e05c99e46dcfec05e4012594a"
@@ -5438,6 +5453,12 @@ rechoir@^0.6.2:
   resolved "https://registry.yarnpkg.com/rechoir/-/rechoir-0.6.2.tgz#85204b54dba82d5742e28c96756ef43af50e3384"
   dependencies:
     resolve "^1.1.6"
+
+"recorderjs@github:mattdiamond/Recorderjs":
+  version "0.1.0"
+  resolved "https://codeload.github.com/mattdiamond/Recorderjs/tar.gz/08e7abd99739be6946f19f6806ccb368138f2dd3"
+  dependencies:
+    inline-worker "^0.1.0"
 
 recursive-readdir@^2.0.0:
   version "2.1.0"

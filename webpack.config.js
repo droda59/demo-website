@@ -12,7 +12,7 @@ const ENV = process.env.NODE_ENV && process.env.NODE_ENV.toLowerCase() || 'devel
 let config;
 
 // basic configuration:
-const title = 'Demo website';
+const title = 'Microsoft Cognitive Services Bing Speech API';
 const baseUrl = '/';
 const rootDir = path.resolve();
 const srcDir = path.resolve('src');
@@ -51,7 +51,9 @@ const coreBundles = {
     'aurelia-templating',
     'aurelia-templating-binding',
     'aurelia-templating-router',
-    'aurelia-templating-resources'
+    'aurelia-templating-resources',
+    "aurelia-validation",
+    "recorderjs"
   ]
 }
 

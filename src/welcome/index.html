@@ -1,9 +1,38 @@
 <template>
+    <require from="../shared/components/error-summary.html"></require>
+
     <section>
         <h2 class="ui center aligned icon header">
             <i class="unmute icon"></i>
             <div class="content">
             </div>
         </h2>
+        <!--<div class="ui centered grid">-->
+          <!--<div class="eight wide column">-->
+                <div class="ui ignored info message" if.bind="token">Token successfully created!</div>
+                
+              <form class="ui form ${isWorking ? 'loading' : ''}" submit.delegate="send()" validation-errors.bind="errors">
+                  <error-summary errors.bind="errors"></error-summary>
+                  
+                  <div class="field">
+                    <div class="ui icon buttons">
+                        <div class="ui green button ${token ? '' : 'disabled'}" click.delegate="startRecording()"><i class="unmute icon"></i></div>
+                        <div class="ui red button ${token ? '' : 'disabled'}" click.delegate="stopRecording()"><i class="mute icon"></i></div>
+                    </div>
+                    <audio controls autoplay></audio>
+                  </div>
+                    
+                    <div class="field">
+                        <label>Text</label>
+                        <textarea rows="2" value.one-way="text" readonly="" class="text ${color}"></textarea>
+                    </div>
+
+                    <button type="submit" class="ui primary button ${token && audioBlob ? '' : 'disabled'}" click.delegate="send()">
+                        <i class="send icon"></i>
+                        Envoyer
+                    </button>
+              </form>
+          <!--</div>-->
+        <!--</div>-->
     </section>
 </template>
